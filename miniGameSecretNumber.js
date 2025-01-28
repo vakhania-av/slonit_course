@@ -48,7 +48,7 @@ function init() {
   findNumberBySecondPc(null);
   
   while (!isFound) {
-      if (middle === searchedValue) {
+    if (middle === searchedValue) {
       isFound = true;
       console.log(`Компьютер 1: Угадал!\n Количество попыток: ${attempts}\n Результат: ${searchedValue}`);
         
