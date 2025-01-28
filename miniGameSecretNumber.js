@@ -14,7 +14,7 @@ function printBySecondPc(range) {
   console.log(`Компьютер 2: Попытка № ${attempts}`);
   
   if (!!range) {
-  	console.log(`Компьютер 2: Диапазон ${range}`);
+    console.log(`Компьютер 2: Диапазон ${range}`);
   }
   
   console.log(`Компьютер 2: Пробую число ${middle}`);
