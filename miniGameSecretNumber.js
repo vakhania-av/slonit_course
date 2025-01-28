@@ -2,7 +2,7 @@
 function predictRandomNumber() {
   const HINTS = ["Меньше", "Больше", "Угадал"];
 
-	let min = 0, 
+  let min = 0, 
       max = 100;
   
   let attemps = 0, 
