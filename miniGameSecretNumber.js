@@ -2,8 +2,8 @@
 let start = 0, 
     end = 100, 
     middle, 
-	isFound = false, 
-	attempts = 0;
+    isFound = false, 
+	  attempts = 0;
 
 function printByFirstPc(phrase) {
   console.log(`Компьютер 1: ${phrase}`);
@@ -50,9 +50,9 @@ function init() {
   while (!isFound) {
   	if (middle === searchedValue) {
     	isFound = true;
-        console.log(`Компьютер 1: Угадал!\n Количество попыток: ${attempts}\n Результат: ${searchedValue}`);
+      console.log(`Компьютер 1: Угадал!\n Количество попыток: ${attempts}\n Результат: ${searchedValue}`);
         
-        return;
+      return;
     }
     
     if (middle > searchedValue) {
