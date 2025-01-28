@@ -3,7 +3,7 @@ let start = 0,
     end = 100, 
     middle, 
     isFound = false, 
-	  attempts = 0;
+    attempts = 0;
 
 function printByFirstPc(phrase) {
   console.log(`Компьютер 1: ${phrase}`);
@@ -22,16 +22,16 @@ function printBySecondPc(range) {
 
 function findNumberBySecondPc(phrase) {
   switch(phrase) {
-  	case "Меньше":
-    	end = middle - 1;
+    case "Меньше":
+      end = middle - 1;
       middle = Math.floor((start + end) / 2);
       break;
     case "Больше":
-    	start = middle + 1;
+      start = middle + 1;
       middle = Math.floor((start + end) / 2);
       break;
     default:
-    	middle = Math.floor((start + end) / 2);
+      middle = Math.floor((start + end) / 2);
   }
   
   const range = Math.abs(end - start);
@@ -48,8 +48,8 @@ function init() {
   findNumberBySecondPc(null);
   
   while (!isFound) {
-  	if (middle === searchedValue) {
-    	isFound = true;
+      if (middle === searchedValue) {
+      isFound = true;
       console.log(`Компьютер 1: Угадал!\n Количество попыток: ${attempts}\n Результат: ${searchedValue}`);
         
       return;
