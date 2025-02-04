@@ -1,22 +1,22 @@
 // Задание №14 - Стрелочные функции и углубление в массивы
 function myFilter(array, callback) {
   if (!array.length) {
-		return [];
-	}
+    return [];
+  }
 
   if (!callback) {
     throw new Error("TypeError: missing argument 0 when calling function myFilter");
   }
 
-	const result = [];
+  const result = [];
 
-	for (let i = 0; i <= array.length; i++) {
-		if (callback(array[i])) {
-			result.push(array[i]);
-		};
-	}
+  for (let i = 0; i <= array.length; i++) {
+    if (callback(array[i])) {
+      result.push(array[i]);
+    };
+  }
 
-	return result;
+  return result;
 }
 
 const numbers = [1, 2, 3, 4, 5];
